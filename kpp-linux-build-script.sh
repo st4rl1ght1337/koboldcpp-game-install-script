@@ -8,7 +8,7 @@ else
     echo "error, unzip unsuccessful, exiting fail"
     exit 1
 fi    
-cd linux-kobold
+cd koboldcpp-game-concedo
 if make ; then
     echo "Build successful!"
     touch build_success.lock
