@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "This is the bash script for building Kobold on Linux"
-cd $1
+cd "$1"
 # needed for getting to correct zip dir, get user:// path as first arg.
 if unzip linux-kobold.zip ; then
    echo "Unzip successful"
