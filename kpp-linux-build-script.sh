@@ -10,10 +10,12 @@ else
 fi    
 cd koboldcpp-game-concedo
 if make ; then
+    cd "$1"
     echo "Build successful!"
     touch build_success.lock
     exit 0
 else
+    cd "$1"
     echo "build unsuccessful, exiting fail"
     touch build_failure.lock
     exit 1
